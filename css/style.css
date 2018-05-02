@@ -8,7 +8,6 @@
 }
 
 
-
 * {
   padding: 0;
   margin: 0;
@@ -425,6 +424,10 @@ hr {
     flex-direction: row-rewerse;
   }
 
+  .course:nth-of-type(2) picture {
+    padding-top: 30vw;
+  }
+
   }
 /*end course*/
 
@@ -628,18 +631,14 @@ footer .post_button:hover {
 @media (min-width: 961px) {
 
   .container_footer {
-    width: 1200px;
+    /*width: 1200px;*/
+    width: 62.5vw;
     justify-content: space-between;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-top: 75px;
     padding-bottom: 180px;
-  }
-
-  footer ul {
-    /*margin-top: 52px;*/
-    /*padding-right: 26px;*/
   }
 
   .head_list {
