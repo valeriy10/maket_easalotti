@@ -1,13 +1,11 @@
 
-@font-face {
-  font-family: 'GillSans';
-  src: url('../fonts/GillSans.ttc') format('ttc'),
+  @font-face {
+  font-family: 'WeblySleek UI Semilight';
+  src: url('../fonts/OpenSans-Regular.ttf') format('woff2'),
+  url('../fonts/weblysleekuisl.ttf') format('woff');
   font-weight: normal;
-  font-style: normal;          
+  font-style: normal;            
 }
-
-/*url('../fonts/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('woff');*/
 
 
 * {
@@ -34,10 +32,8 @@ h2, h3 {
 }
 
 body {
-  font-family: 'GillSans';
+  font-family: 'WeblySleekUISemilight';
 }
-
-
 
 header {
 	background: url(../images/guests.png) no-repeat;
@@ -71,18 +67,16 @@ header {
   /*border: 1px solid green;*/
 }
 
-input {
-  margin-top: 10px;
-}
-
 .container_v_menu a {
   color: white;
   margin: 0 auto;
 }
 
+.container_v_menu div {
+  margin-top: 0.9em;
+}
+
 .tel {
-  /*display: flex;
-  align-items: center;*/
   /*width: 11px;*/
   width: 0.57em;
   margin-right: 5px;
@@ -113,24 +107,26 @@ header h4 {
   margin-top: 0.68vw;
 }
 
-header h3 {
-  width: 105px;
-  /*margin-top: 136px;*/
-  margin-top: 7.1vw;
-}
-
 
 .v2_menu {
-  height: 48px;
   display: flex;
   align-items: center;
-  background-color: rgb( 103, 24, 43 );
+  background-color: #67182b;
   /*margin-top: 37px;*/
   margin-top: 1.9vw;
 }
 
 .v2_menu a {
+  display: block;
+  /*height: 48px;*/
+  padding-top: 1.2vw;
+  padding-bottom: 1.4vw;
+  font-size: 1vw;
   color: white;
+}
+
+.v2_menu a:hover {
+  background-color: #952b44;
 }
 
 
@@ -159,6 +155,10 @@ header h3 {
   /*margin-top: 35px;*/
   margin-top: 1.8vw;
   margin-left: auto;
+}
+
+.preview:hover {
+  background-color: #952b44;
 }
 
 .check1 {
@@ -192,9 +192,19 @@ header h3 {
     background: none;
   }
 
+  .v2_menu a {
+    font-size: 4vw;
+  }
+
+  .v2_menu a:hover {
+    text-decoration: underline;
+    background-color: black;
+  }
+
   .container_menu {
     flex-direction: column;
     background-color: black;
+    width: 100%;
     text-align: center;
     opacity: 0.9;
   }
@@ -208,6 +218,29 @@ header h3 {
   }
 }
 
+@media (min-width: 961px) {
+
+  header h3 {
+    width: 105px;
+    width: 12.7vw;
+    font-size: 2.6vw;
+    /*margin-top: 136px;*/
+    margin-top: 7.1vw;
+  }
+
+  .container_v_menu a:nth-of-type(3) {
+    margin-left: 0.8vw;
+  }
+
+  .edit_search {
+    padding-left: -70px;
+  }
+
+  input {
+    margin-right: 25px;
+    margin-right: 1.3vw;
+  }
+}
 
 
 
@@ -232,8 +265,9 @@ header h3 {
 }
 
 hr {
-  background: #932a43;
-  max-width: 320px;
+  background-color: #932a43;
+  color: #932a43;
+  width: 320px;
   height: 1px;
 }
 
@@ -277,6 +311,7 @@ hr {
 
 
 @media (max-width: 960px) {
+
   .subadvantage {
     display: flex;
     flex-direction: column;
@@ -321,6 +356,7 @@ hr {
   /*width: 710px;*/
   /*margin-top: 41px;*/
   text-align: center;
+  padding-top: 10vw;
 }
 
 .course_text h3 {
@@ -334,11 +370,7 @@ hr {
 }
 
 .course hr {
-  background: #932a43;
-  max-width: 320px;
-  height: 1px;
-  margin: 40px auto;
-  /*margin: 2.1em auto;*/
+  margin: 2.1em auto;
 }
 
 .course1 {
@@ -362,6 +394,7 @@ hr {
     width: 100%;
     padding: 40px;
     padding: 12.5vw;
+    padding-top: 0;
   }
 }
 
@@ -493,6 +526,11 @@ hr {
   color: white;
 }
 
+.post_button:hover {
+  background-color: #67182b;
+  cursor: pointer;
+}
+
 @media (max-width: 960px) {
 
   .phone_form {
@@ -533,6 +571,8 @@ hr {
     height: 44px;
     margin-left: 26px;
   }
+
+
 }
 /*end mail_form*/
 
@@ -558,10 +598,29 @@ footer a {
     margin-top: 1.35em;
 }
 
-footer .post_button {
-  width: 13vw;
-  margin-top: 25px;
-  margin-left: 0;
+footer .post_button:hover {
+  background-color: red;
+}
+
+
+@media (max-width: 960px) {
+  footer .post_button {
+    width: 63vw;
+  }
+
+  .icon {
+    margin-bottom: 10vw;
+  }
+
+  .container_footer {
+    margin-top: 10vw;
+    padding-left: 6vw;
+  }
+
+  .head_list {
+    margin-top: 4.5vw;
+    margin-bottom: 6vw;
+  }
 }
 
 
@@ -595,5 +654,12 @@ footer .post_button {
   .line_up {
     width: 1px;
     background: #932a43;
+  }
+
+  footer .post_button {
+    width: 13vw;
+    margin-top: 25px;
+    margin-left: 0;
+    font-size: 0.9vw;
   }
 }
