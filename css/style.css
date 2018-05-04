@@ -8,11 +8,6 @@
 }
 
 
-
-
-
-
-
 * {
   padding: 0;
   margin: 0;
@@ -447,7 +442,7 @@ hr {
   flex-direction: column;
   background: url(../images/mebel_making.png) no-repeat;
   background-position: center;
-  /*background-size: cover;*/
+  background-size: cover;
 }
 
  .mebel_making .preview {
