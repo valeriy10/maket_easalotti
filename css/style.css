@@ -8,12 +8,6 @@
 }
 
 
-
-
-
-
-
-
 * {
   padding: 0;
   margin: 0;
@@ -498,10 +492,6 @@ hr {
 /*end mebel_making*/
 
 
-
-
-
-
 /*begin mail_form*/
 
 .form {   
@@ -644,7 +634,9 @@ footer .post_button:hover {
     margin-left: auto;
     margin-right: auto;
     /*padding-top: 75px;*/
-    padding-bottom: 180px;
+    padding-top: 3.9vw;
+    /*padding-bottom: 180px;*/
+    padding-bottom: 9.4vw;
   }
 
   .head_list {
