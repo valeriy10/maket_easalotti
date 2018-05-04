@@ -8,8 +8,6 @@
 }
 
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -427,7 +425,7 @@ hr {
   }
 
   .course:nth-of-type(2) picture {
-    padding-top: 30vw;
+    /*padding-top: 30vw;*/
   }
 
   }
@@ -639,7 +637,7 @@ footer .post_button:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 75px;
+    /*padding-top: 75px;*/
     padding-bottom: 180px;
   }
 
