@@ -8,7 +8,6 @@
 }
 
 
-
 * {
   padding: 0;
   margin: 0;
@@ -347,11 +346,8 @@ hr {
   position: relative;
 }
 
-.treug {
+.treug, .treug_right {
   position: absolute;
-  /*background-color:  white;
-  width: 15px;
-  height: 15px;*/
 }
 
 .course__picture img, sourse {
@@ -435,6 +431,14 @@ hr {
     left: 48.65%;
     border: 0.68vw solid transparent;
     border-right: 0.68vw solid white;
+    transform: translateY(-50%);
+  }
+
+  .treug_right {
+    top: 48.65%;
+    left: 50%;
+    border: 0.68vw solid transparent;
+    border-left: 0.68vw solid white;
     transform: translateY(-50%);
   }
 
