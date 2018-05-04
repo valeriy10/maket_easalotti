@@ -164,7 +164,6 @@ header h4 {
 .check1 {
   /*margin-top: 143px;*/
   margin-top: 7.45vw;
-  margin-top: ;
   text-align: center;
 }
 
@@ -219,6 +218,10 @@ header h4 {
 }
 
 @media (min-width: 961px) {
+
+  header {
+    height: 56.3vw;
+  }
 
   header h3 {
     width: 105px;
